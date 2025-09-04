@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewModels.SignUpFragment"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shape1"
+                android:contentDescription="Image" />
+
+            <TextView
+                android:id="@+id/SignUpTvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Onboard!"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginTop="@dimen/_80sdp" />
+
+            <TextView
+                android:id="@+id/SignUpTvSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s help to meet up your tasks."
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:layout_below="@id/SignUpTvWelcome"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+            <EditText
+                android:id="@+id/SignUpEtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SignUpTvSubTitle"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:hint="Enter Your Name"
+                android:background="@drawable/bg_edit_text"
+                android:textColorHint="@color/black"
+                android:padding="@dimen/_10sdp" />
+            <EditText
+                android:id="@+id/SignUpEtRollNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SignUpEtName"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="Enter Complete Roll No"
+                android:background="@drawable/bg_edit_text"
+                android:textColorHint="@color/black"
+                android:padding="@dimen/_10sdp" />
+
+            <EditText
+                android:id="@+id/SignUpEtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SignUpEtRollNo"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="Enter Your Email"
+                android:background="@drawable/bg_edit_text"
+                android:textColorHint="@color/black"
+                android:padding="@dimen/_10sdp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/SignUpEtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SignUpEtEmail"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="Enter Your Password"
+                android:background="@drawable/bg_edit_text"
+                android:textColorHint="@color/black"
+                android:padding="@dimen/_10sdp"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/SignUpEtConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SignUpEtPassword"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="Confirm Password"
+                android:background="@drawable/bg_edit_text"
+                android:textColorHint="@color/black"
+                android:padding="@dimen/_10sdp"
+                android:inputType="textPassword" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/SignUpButtonSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:backgroundTint="@color/secondary_color"
+                android:text="Register"
+                android:textSize="@dimen/_18ssp"
+                android:layout_below="@id/SignUpEtConfirmPassword"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_alignParentBottom="false" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_20sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Have an account?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+        <TextView
+            android:id="@+id/SignUpTvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/secondary_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginStart="@dimen/_2sdp" />
+    </LinearLayout>
+
+</RelativeLayout>

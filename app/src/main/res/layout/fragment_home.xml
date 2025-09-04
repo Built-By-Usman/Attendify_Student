@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewModels.HomeFragment">
+
+    <!-- Top Container -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/HomeLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@drawable/linear_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Name and Edit Button -->
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/HomeTvRollNo"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/HomeTvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:maxWidth="@dimen/_180sdp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                />
+
+            <ImageButton
+                android:id="@+id/HomeImgBtnEditName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_edit_24"
+                android:padding="@dimen/_8sdp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <!-- Roll No -->
+        <TextView
+            android:id="@+id/HomeTvRollNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll No"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/HomeLinearLayout"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Delete/Menu Button -->
+        <ImageButton
+            android:id="@+id/DeleteMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_8sdp"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/HomeMarkAttendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Attendance"
+            app:layout_constraintTop_toBottomOf="@id/HomeTvRollNo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@color/black"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- "Scan QR Code" Text -->
+    <ImageView
+        android:id="@+id/HomeTvAddSubject"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_180sdp"
+        android:src="@drawable/subject_empty"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintTop_toBottomOf="@id/HomeLinearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <!-- "All Subjects" Title -->
+    <TextView
+        android:id="@+id/AllClassesTvAllClasses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Subjects"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintTop_toBottomOf="@id/HomeLinearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_12sdp" />
+
+    <!-- Add Subject Button -->
+    <ImageButton
+        android:id="@+id/HomeImgBtnAddSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_24"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintTop_toTopOf="@id/AllClassesTvAllClasses"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/AllClassesTvAllClasses"/>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/HomeRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/AllClassesTvAllClasses"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

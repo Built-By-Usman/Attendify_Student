@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "218381840404",
+    "project_id": "attendence-system-f9e18",
+    "storage_bucket": "attendence-system-f9e18.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218381840404:android:f5fb76eded4f8449e23701",
+        "android_client_info": {
+          "package_name": "com.builtbyusman.attendify.student"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzoRTyK5Np4B7cemGORuN4BnkiKT9pqOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218381840404:android:0b0b439e9fbe4a7fe23701",
+        "android_client_info": {
+          "package_name": "com.builtbyusman.attendify.teacher"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzoRTyK5Np4B7cemGORuN4BnkiKT9pqOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

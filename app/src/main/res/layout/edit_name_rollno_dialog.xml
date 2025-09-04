@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_8sdp"
+        android:backgroundTint="@color/background"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/dialogTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Name And Roll No"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/secondary_color"
+                android:textStyle="bold"
+                android:textSize="@dimen/_18ssp"
+                />
+            <EditText
+                android:id="@+id/dialogEtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter New Name"
+                android:layout_below="@+id/dialogTitle"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:background="@drawable/bg_edit_text"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:inputType="textCapWords"/>
+            <EditText
+                android:id="@+id/dialogEtRollNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter New Roll No"
+                android:layout_below="@+id/dialogEtName"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:background="@drawable/bg_edit_text"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:inputType="textCapCharacters"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dialogBtnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/dialogEtRollNo"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:backgroundTint="@color/secondary_color"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

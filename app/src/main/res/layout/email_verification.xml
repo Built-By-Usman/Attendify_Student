@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_30sdp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/emailVerificationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify Email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/secondary_color"
+            android:textStyle="bold"
+            />
+            <TextView
+                android:id="@+id/emailVerificationMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Email is not verified try again or  "
+                android:layout_below="@+id/emailVerificationTitle"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/emailVerificationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailVerificationMessage"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:text="Resend Email"
+                android:backgroundTint="@color/secondary_color"
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

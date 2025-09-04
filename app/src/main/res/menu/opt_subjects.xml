@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+    android:id="@+id/MarkAttendance"
+    android:title="Mark Attendance"
+    />
+    <item
+        android:id="@+id/DeleteSubject"
+        android:title="Delete Subject"
+        android:icon="@drawable/baseline_update_24"
+        />
+
+
+</menu>

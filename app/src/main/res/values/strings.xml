@@ -1,0 +1,41 @@
+<resources>
+
+        <!-- Existing strings -->
+        <string name="app_name">Attendify</string>
+        <string name="add_subject_prompt">Click + to add subjects</string>
+
+        <!-- New strings added for the improved code -->
+    <string name="reauth_title">Security Check</string>
+    <string name="reauth_message">Please enter your password to confirm account deletion</string>
+    <string name="reauth_hint">Current Password</string>
+    <string name="reauth_error">Invalid password. Please try again.</string>
+        <string name="fill_both_fields">Please fill in both fields</string>
+        <string name="profile_updated">Profile updated!</string>
+        <string name="empty_scan">Empty scan result</string>
+        <string name="invalid_qr">Invalid QR format</string>
+        <string name="scan_failed">Scan failed</string>
+        <string name="roll_not_registered">Roll number not registered</string>
+        <string name="name_mismatch">Name mismatch with records</string>
+        <string name="subject_not_found">Subject not found</string>
+        <string name="subject_already_added">Subject already added</string>
+        <string name="subject_added">Subject added</string>
+        <string name="signed_out">Signed out</string>
+        <string name="delete_account">Delete Account</string>
+        <string name="delete_account_confirmation">Are you sure you want to delete your account? This action cannot be undone.</string>
+        <string name="yes">Yes</string>
+        <string name="no">No</string>
+        <string name="account_deleted">Account deleted</string>
+        <string name="no_user_to_delete">No user to delete</string>
+        <string name="unknown_error">An unexpected error occurred</string>
+        <string name="camera_permission_required">Camera permission required for QR scanning</string>
+        <string name="profile_not_loaded">Profile not loaded yet</string>
+    <string name="profile_update_failed">Profile update failed</string>
+    <string name="subject_add_failed">Failed to add subject</string>
+    <string name="profile_load_failed">Failed to load profile</string>
+    <string name="subject_load_failed">Failed to load subjects</string>
+    <string name="account_delete_failed">Account deletion failed</string>
+    <string name="data_delete_failed">Data deletion failed</string>
+    <string name="camera_permission_rationale">Camera access is required to scan QR codes</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    </resources>
